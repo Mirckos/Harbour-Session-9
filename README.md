@@ -10,6 +10,7 @@ git clone https://huggingface.co/Qwen/Qwen2-0.5B-Instruct ~/LLM/models/Qwen2-0.5
 
 Deploy the model as an OpenAI-compatible server:
 
+
 ```bash
 docker run --runtime nvidia --gpus all \
     -v ~/LLM/models/:/root/models \
