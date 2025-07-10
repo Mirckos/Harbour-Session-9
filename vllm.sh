@@ -12,8 +12,8 @@ DOCKER_BUILDKIT=1 docker build \
 
 docker run --rm \
   -p 8000:8000 \
-  --shm-size=4g \                 # or --ipc=host
+  --shm-size=4g \
   -v ~/.cache/huggingface:/root/.cache/huggingface \
-  vllm-openai-cpu-arm \           # or vllm-openai-cpu-x86
+  vllm-openai-cpu-arm \
   --model /root/models/Qwen2-0.5B-Instruct \
   --dtype float16
